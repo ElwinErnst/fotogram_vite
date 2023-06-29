@@ -23,7 +23,7 @@ const Post = ({ post, onLike, onComment, onDelete }) => {
       </div>
       <div className="post-actions">
         <div className="flex items-center justify-between">
-          <LikeButton onLike={handleLike} />
+          <LikeButton onLike={handleLike} likes={post.likes} />
           <button
             onClick={handleDelete}
             className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded"
