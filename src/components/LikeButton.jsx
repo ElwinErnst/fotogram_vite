@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 
-const LikeButton = ({ onLike }) => {
-  const [like, setLike] = useState(0);
+const LikeButton = ({ onLike, likes }) => {
+  const [like, setLike] = useState(likes);
 
   const addLike = () => {
     setLike(like + 1);
