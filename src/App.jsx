@@ -86,6 +86,7 @@ const HomePage = () => {
           post={post}
           onLike={() => handleLikePost(post._id)}
           onDelete={() => handleDeletePost(post._id)}
+          onComment={(comment) => handleAddComment(post._id, comment)}
         >
           <LikeButton onLike={() => handleLikePost(post._id)} />
           <CommentForm onSubmit={(comment) => handleAddComment(post._id, comment)} />
