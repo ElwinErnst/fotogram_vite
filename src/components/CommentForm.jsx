@@ -23,7 +23,7 @@ const CommentForm = ({ onSubmit }) => {
           onChange={handleCommentChange}
           className="border border-gray-400 px-2 py-1 w-full"
           required
-        />
+          />
         <button
           type="submit"
           className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mt-2"
